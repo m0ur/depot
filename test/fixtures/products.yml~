@@ -7,7 +7,7 @@ one:
   price: 9.99
 
 two:
-  title: MyStrin2
+  title: MyString2
   description: MyText
   image_url: MyString.png
   price: 9.99
