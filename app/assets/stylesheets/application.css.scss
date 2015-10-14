@@ -23,7 +23,8 @@
   text-align: center;
 
   img {
-    float: left;
+    float: left !important;
+		position: relative;
   }
 }
 #notice {
