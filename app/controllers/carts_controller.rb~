@@ -1,6 +1,11 @@
 class CartsController < ApplicationController
   before_action :set_cart, only: [:show, :edit, :update, :destroy]
 
+	def invalid_cart
+  logger.error "Attempt to access invalid cart #{params[:id]}"
+  redirect_to store_url, notice: 'Invalid cart'
+	end
+
   # GET /carts
   # GET /carts.json
   def index
@@ -61,15 +66,7 @@ class CartsController < ApplicationController
     end
   end
 
-	def add_product(product_id)
-			current_item = line_items.find_by(product_id: product_id)
-			if current_item
-				current_item.quantity += 1
-			else
-				current_item = line_items.build(product_id: product_id)
-			end
-			current_item
-		end
+	
 
   private
     # Use callbacks to share common setup or constraints between actions.
