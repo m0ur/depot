@@ -24,7 +24,7 @@
 
   img {
     float: left !important;
-		position: absolute;
+		position: relative;
   }
 }
 #notice {
@@ -34,6 +34,24 @@
   margin-bottom: 2em;
   background-color: #f0f0f0;
   font: bold smaller sans-serif;
+}
+form, div {
+  display: inline;
+}
+
+input {
+  font-size: small;
+}
+
+#cart {
+  font-size: smaller;
+  color: white;
+
+  table {
+    border-top: 1px dotted #595;
+    border-bottom: 1px dotted #595;
+    margin-bottom: 10px;
+  }
 }
 #columns {
   background: #141;
