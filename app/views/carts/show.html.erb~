@@ -1,5 +1,5 @@
 <h2>Your Pragmatic Cart</h2>
 <h2>Your Cart</h2>
-
+<%= render @cart %>
 <%= button_to 'Empty cart', @cart, method: :delete,
       data: { confirm: 'Are you sure?' } %>
