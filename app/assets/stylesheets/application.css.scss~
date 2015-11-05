@@ -35,7 +35,24 @@
   background-color: #f0f0f0;
   font: bold smaller sans-serif;
 }
-form, div {
+
+#columns {
+  background: #141;
+
+  #main {
+    margin-left: 17em;
+    padding: 1em;
+    background: white;
+  }
+
+  #side {
+    float: left;
+    padding: 1em 2em;
+    width: 13em;
+    background: #141;
+    color: white;
+
+		form, div {
   display: inline;
 }
 
@@ -53,21 +70,6 @@ input {
     margin-bottom: 10px;
   }
 }
-#columns {
-  background: #141;
-
-  #main {
-    margin-left: 17em;
-    padding: 1em;
-    background: white;
-  }
-
-  #side {
-    float: left;
-    padding: 1em 2em;
-    width: 13em;
-    background: #141;
-    color: white;
 
     ul {
       padding: 0;
